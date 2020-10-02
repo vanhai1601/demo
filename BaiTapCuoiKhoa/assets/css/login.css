@@ -1,0 +1,89 @@
+.content__login {
+  margin-top: -20px;
+  box-sizing: border-box !important;
+  margin-bottom: 30px;
+}
+.content__login-nav {
+  margin-bottom: 30px;
+}
+.content__login-nav ol {
+  background-color: #170240 !important;
+  padding-left: 10px;
+}
+.content__login-nav ol li {
+  font-size: 16px;
+  font-weight: 600;
+}
+.content__login-nav-link:hover {
+  color: #8869e4 !important;
+}
+
+.content__login-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 35%;
+  margin: 0 auto;
+}
+.content__login-item .item-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.content__login-item .msg {
+  color: red;
+  display: none;
+}
+
+.item-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  line-height: 40px;
+  padding-left: 10px;
+  outline: none;
+  margin-bottom: 5px;
+}
+.content__login-item div {
+  margin-bottom: 25px;
+}
+.content__login-item div p {
+  margin-bottom: 0px !important;
+}
+
+.msg_emailpass {
+  color: red !important;
+  display: none;
+}
+
+.msg_emailpass2 {
+  color: red !important;
+  font-size: 14px !important;
+  display: block;
+}
+.item-forgot {
+  margin-top: -20px;
+}
+.item-btn {
+  background-color: #220c38;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  outline: none !important;
+}
+.item-btn:hover {
+  background-color: #00006c;
+}
+.item-link {
+  color: #8869e4 !important;
+}
+a.item-link:hover {
+  color: red !important;
+}

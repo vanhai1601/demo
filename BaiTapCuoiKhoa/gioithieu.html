@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biznoithat</title>
+  <!-- link icon -->
+  <link rel="stylesheet" href="/assets/font/font-icon/css/all.min.css" style="text/css">
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- link jquery -->
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- link jquery-ui -->
+  <script src="../assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="../assets/js/jquery-ui-1.12.1/jquery-ui.min.css">
+  <!-- link css -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/reponsiver.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/gioithieu.css" type="text/css">
+</head>
+<body>
+<div class="container">
+  
+  <!-- Header -->
+  <div class="header">
+    <!-- header_top -->
+    <div class="header__top">
+      <div class="header__top-contact">
+        <div class="header__top-hotline">
+          <i class="fas fa-headphones-alt"></i> 
+          <span class="hide-mobile-tablet">Hotline:</span><a href="#"> 0386701897</a>
+        </div>
+        <div class="header__top-email hide-mobile-tablet">
+          <i class="far fa-envelope"></i> 
+            Email:<a href="#"> abcd@biznoithat.com</a>
+        </div>
+      </div>
+      <div class="header__top-account">
+        <div class="header__top-place">
+          <a href="chinhanh.html">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="hide-mobile">Địa điểm các cửa hàng</span><span class="show-mobile">Showroom</span>
+          </a>
+        </div>
+        <div class="header__top-login hide-mobile-tablet">
+          <a href="login.html">
+            <i class="fas fa-user"></i>Đăng nhập
+          </a>
+        </div>
+        <div class="header__top-register hide-mobile-tablet">
+          <a href="register.html" >
+            <i class="fas fa-user-plus"></i>Đăng ký
+          </a>
+        </div>
+        <div class="header__top-cart" data-toggle="modal">
+          <a href="#"><i class="fas fa-shopping-cart header__top-cart-icon"></i></a>
+          <input class="header__top-cart-number" type="button" value="0" id="cart_number"/>
+        </div>
+      </div>
+    </div>
+    <!-- header_navbar -->
+    <div class=" header__nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" id="navbar_menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                TRANG CHỦ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="gioithieu.html">Giới thiệu</a>
+                <a class="dropdown-item" href="#">Tin tức</a>
+                <a class="dropdown-item" href="#">Tuyển dụng</a>
+                <a class="dropdown-item" href="#">Liên hệ</a>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PHÒNG KHÁCH
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Sofa</a>
+                <a class="dropdown-item" href="#">Kệ tivi</a>
+                <a class="dropdown-item" href="#">Bàn trà</a>
+                <a class="dropdown-item" href="#">Tủ trang trí</a>
+                <a class="dropdown-item" href="#">Tủ giấy</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PHÒNG ĂN
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Bàn ăn</a>
+                <a class="dropdown-item" href="#">Kệ, tủ trang trí</a>
+                <a class="dropdown-item" href="#">Bàn ghế nhà hàng</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PHÒNG NGỦ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Giường</a>
+                <a class="dropdown-item" href="#">Bàn học</a>
+                <a class="dropdown-item" href="#">Đệm</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product_all.html" id="all-product">ALL</a>
+            </li>
+            <li class="nav-item nav__mobile-item">
+              <a class="nav-link" href="login.html">
+                <i class="fas fa-user"></i>Đăng nhập
+              </a>
+            </li>
+            <li class="nav-item nav__mobile-item">
+              <a class="nav-link" href="register.html">
+                <i class="fas fa-user-plus"></i>Đăng ký
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 header__nav-search" >
+            <input class="form-control header__nav-input" type="search" placeholder="Search" id="search">
+            <button class="header__nav-btn" type="button" id="searchbar" ><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__introduce">
+      <nav aria-label="breadcrumb" class="content__introduce-nav">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="content__introduce-nav-link">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
+        </ol>
+      </nav>
+      <div class="row content__introduce-list">
+        <div class="col-lg-6 list-item"><img src="assets/img/logo.png" alt="" style="width:100%" class="item-image"></div>
+        <div class="col-lg-6 list-item">
+            <p>SỨ MỆNH CỦA CHÚNG TÔI</p>
+            <h3>KHÁCH HÀNG ĐƯỢC ĐẶT LÊN TẤT CẢ</h3>
+            <p>Kính gửi Quý Khách: Công ty TNHH Biz nội 
+                thất xin gửi tới Quý Khách lời chào trân trọng nhất. 
+                Với mong muốn đem đến cho Quý Khách các sản phẩm Việt Nam 
+                chất lượng cao - 100% đạt tiêu chuẩn xuất khẩu, không gây 
+                độc hại cho người tiêu dùng,  giá thành rẻ hơn thị trường 
+                thế giới từ 50 đến 80%, với mong muốn quảng bá cho hàng Việt 
+                và phục vụ người tiêu dùng Việt Nam.  Với phương châm kết nối 
+                doanh nghiệp Việt với người tiêu dùng giúp người tiêu dùng tiếp 
+                cận được với hàng hóa Việt Nam chất lượng cao, được hưởng nhiều 
+                quyền lợi nhất khi mua sắm hàng hóa, trong những năm qua chúng 
+                tôi đã không ngừng hợp tác với nhiều doanh nghiệp sản xuất hàng 
+                tiêu dùng, các doanh nghiệp thương mại/dịch vụ Việt để đưa những 
+                sản phẩm tốt nhất đến với người tiêu dùng. Cũng vì lẽ đó, Biznoithat.com 
+                chắc chắn sẽ là đối tác phù hợp đồng hành cùng Quý khách trong quá trình 
+                phát triển, khẳng định thương hiệu và chinh phục người tiêu dùng Việt Nam. 
+                Trân trọng cảm ơn!
+            </p>
+        </div>
+    </div>
+    <div class="row content__introduce-list">
+        <div class="col-md-4 list-item">
+            <div>
+                <i class='fas fa-headphones-alt'></i>
+            </div>
+            <h5>Phục vụ khách hàng 24/7</h5>
+            <p>Hotline: 0933896686/0912305775</p>
+        </div>
+        <div class="col-md-4 list-item">
+            <div>
+                <i class='fas fa-first-aid'></i>
+            </div>
+            <h5>Bảo hành dài hạn</h5>
+            <p>Bảo hành ít nhất 12 tháng tất cả các sản phẩm</p>
+        </div>
+        <div class="col-md-4 list-item">
+            <div>
+                <i class='fab fa-amazon-pay'></i>
+            </div>
+            <h5>Thanh toán linh hoạt</h5>
+            <p>Chấp nhận thanh toán tiền mặt, chuyển khoản, chấp nhận thanh toán Visa, Master</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="content__allproduct">
+      <nav aria-label="breadcrumb" class="content__allproduct-nav">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="content__allproduct-link" >Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page" id="home_active">Tìm kiếm sản phẩm</li>
+        </ol>
+      </nav>
+      <div id="msg"></div>
+      <div class="price_sort">
+          <select id="selection-sort">
+              <option value="0">Sắp xếp</option>
+              <option value="1">Giá tăng dần</option>
+              <option value="2">Giá giảm dần</option>
+          </select>
+      </div>
+      <class class="row">
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/giuong1.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Giường 2015</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2500$</span>
+                    <span class="price_sale">2220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/giuong2.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Giường 2016</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2000$</span>
+                    <span class="price_sale">1820$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/giuong3.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Giường 2017</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">3000$</span>
+                    <span class="price_sale">2820$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/giuong4.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Giường 2018</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">1200$</span>
+                    <span class="price_sale">1000$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/giuong5.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Giường 2019</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">4500$</span>
+                    <span class="price_sale">4220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/tu1.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Tủ 2019</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">1500$</span>
+                    <span class="price_sale">1220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/tu2.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Tủ 2015</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">3500$</span>
+                    <span class="price_sale">3220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/tu3.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Tủ 2016</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2500$</span>
+                    <span class="price_sale">2220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/tu4.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Tủ 2017</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">500$</span>
+                    <span class="price_sale">420$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban1.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2019</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">4500$</span>
+                    <span class="price_sale">4220$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban2.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2015</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">1700$</span>
+                    <span class="price_sale">1520$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban3.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2016</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">700$</span>
+                    <span class="price_sale">520$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban4.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2018</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">3700$</span>
+                    <span class="price_sale">3520$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban5.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2017</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">5700$</span>
+                    <span class="price_sale">5520$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ban6.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Bàn 2014</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2300$</span>
+                    <span class="price_sale">2120$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe1.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2015</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">1300$</span>
+                    <span class="price_sale">1250$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe2.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2016</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2400$</span>
+                    <span class="price_sale">2250$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe3.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2017</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">900$</span>
+                    <span class="price_sale">750$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe4.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2018</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">3200$</span>
+                    <span class="price_sale">3150$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe5.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2019</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2900$</span>
+                    <span class="price_sale">2750$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/ghe6.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Ghế 2020</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">2500$</span>
+                    <span class="price_sale">2250$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/dem1.PNG" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Đệm 2018</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">3300$</span>
+                    <span class="price_sale">3250$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 content__product-item ">
+          <div class="card" >
+              <img src="assets/img/dem2.jpg" class="card-img-top" alt="...">
+              <div class="sale">-18%</div>
+              <div class="card-body">
+                  <h5 class="card-title"><a href="">Đệm 2017</a></h5>
+                  <p class="card-text">
+                    <span class="card-text-sale">1300$</span>
+                    <span class="price_sale">1250$</span>
+                  </p>
+                  <div>
+                    <a href="#" class="btn btn-success text-white">Mua ngay</a>
+                    <input type="text" class="my_spinner" value="1">
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div> 
+  
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer__showroom">
+      <h5>HỆ THỐNG CỬA HÀNG</h5>
+      <div class="row footer__showroom-list">
+        <div class="col-md-4 footer__showroom-item">
+          <h6>Biz Hà Đông ( Metro Hà Đông )</h6>
+          <p>Tầng 3 - TTTTM MeLinh Hà Đông, Số 1 Hà Cầu - Hà Đông - HN</p>
+          <p>TEL: <a href="#">02422026789</a></p>
+          <p>OPEN: 9:00 - 21:30</p>
+        </div>
+        <div class="col-md-4 footer__showroom-item">
+          <h6>Biz Long Biên ( Big C Long Biên )</h6>
+          <p>Tầng 2, TTTM Savico Long Biên, số 7-9 đường Nguyễn Văn Linh, quận Long Biên, TP Hà Nội</p>
+          <p>TEL: <a href="#">02462913000</a></p>
+          <p>OPEN: 9:00 - 22:00</p>
+        </div>
+        <div class="col-md-4 footer__showroom-item">
+          <h6>Biz Mỹ Đình ( Big C Mỹ Đình )</h6>
+          <p>Tầng 3 - TTTM The Garden - Đường Mễ Trì - Mỹ Đình - Hà Nội (BIG C Mễ Trì)</p>
+          <p>TEL: <a href="#">02422453555</a></p>
+          <p>OPEN: 9:00 - 22:00</p>
+        </div>
+      </div> 
+    </div>
+    <div class="footer__bottom">
+      <div class="row footer__bottom-infor">
+        <div class="col-lg-2 col-md-6 footer__bottom-infor-item">
+          <h5>THÔNG TIN</h5>
+          <p><a href="#">Giới thiệu</a></p>
+          <p><a href="#">Sản phẩm</a></p>
+          <p><a href="#">Tin tức</a></p>
+          <p><a href="#">Tuyển dụng</a></p>
+          <p><a href="#">Liên hệ</a></p>
+        </div>
+        <div class="col-lg-2 col-md-6 footer__bottom-infor-item">
+          <h5>CHÍNH SÁCH</h5>
+          <p><a href="#">Bảo hành</a></p>
+          <p><a href="#">Thanh toán</a></p>
+          <p><a href="#">Mua hàng online</a></p>
+          <p><a href="#">Vận chuyển</a></p>
+          <p><a href="#">Chính sách trả đổi</a></p>
+        </div>
+        <div class="col-lg-4 col-md-6 footer__bottom-infor-item">
+          <h5>TỔNG ĐÀI BÁN HÀNG</h5>
+          <p class="phone">
+            <a href="#"><i class="fas fa-phone-alt footer__bottom-infor-icon"></i><span>0933 896 686</span></a>
+          </p>
+          <h5>CÁC BỘ PHẬN KHÁC</h5>
+          <p class="hotline">
+            <a href="#">
+              <i class="fas fa-phone-alt footer__bottom-infor-icon"></i>
+              <span>093 389 6686 | Hotline 24/7</span>
+            </a>
+          </p>
+          <p class="hotline" >
+            <a href="#">
+              <i class="fas fa-phone-alt footer__bottom-infor-icon"></i>
+              <span>091 230 5775 | Sửa chữa & Bảo hành</span>
+            </a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 footer__bottom-infor-item">
+          <h5>KẾT NỐI VỚI CHÚNG TÔI</h5>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <p class="logo">
+            <img src="assets/img/hinh1.PNG" alt="" /> 
+            <img src="assets/img/hinh2.PNG" alt="" />
+          </p>
+        </div>
+      </div>  
+      <hr>
+      <div class="footer__bottom-nav">
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item"><a href="#">PHÒNG KHÁCH</a></li>
+          <li class="footer__bottom-item"><a href="#">PHÒNG ĂN</a></li>
+          <li class="footer__bottom-item"><a href="#">PHÒNG NGỦ</a></li>
+          <li class="footer__bottom-item"><a href="#">ĐỒ TRANG TRÍ</a></li>
+          <li class="footer__bottom-item"><a href="#">ĐỆM</a></li>
+          <li class="footer__bottom-item"><a href="#">SẢN PHẨM BÁN CHẠY</a></li>
+          <li class="footer__bottom-item"><a href="#">SẢN PHẨM MỚI</a></li>
+          <li class="footer__bottom-item"><a href="#">ALL</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">My Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Sản phẩm</th>
+                          <th scope="col">Giá</th>
+                          <th scope="col">Số lượng</th>
+                          <th scope="col">Tổng giá</th>
+                      </tr>
+                  </thead>
+                  <tbody class="list-order-product">
+                  </tbody>
+              </table>
+              <h6 id="sum_price">
+                <span>Tổng tiền cần thanh toán là:</span>
+                <span id="sum_price-number"></span>
+              </h6>
+              <div>
+                <a href="#" class="btn btn-success text-white">Thanh toán</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="assets/js/index.js"></script>      
+</body>
+</html>
